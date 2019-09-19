@@ -9,7 +9,7 @@ it('Visual regression test', async () => {
   });
   const page = await browser.newPage();
   await page.setViewport({ width: 1200, height: 1800 });
-  await page.goto('http://localhost:8089/index-page.html');
+  await page.goto('http://localhost:8084/index-page.html');
   const image = await page.screenshot({ fullPage: true });
   browser.close();
   expect(image).toMatchImageSnapshot();
