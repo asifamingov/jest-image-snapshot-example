@@ -30,7 +30,7 @@ jobs:
           name: Test
           command: |
             sleep 2
-            yarn test -- --maxWorkers=2
+            npx jest
       - store_artifacts:
           path: test/__image_snapshots__/__diff_output__
           destination: image_snapshot_diff
