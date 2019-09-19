@@ -24,7 +24,7 @@ jobs:
           command: sh ./scripts/workaround-puppeteer-issue-290.sh
       - run:
           name: Start Server
-          command: yarn start
+          command: yarn serve
           background: true
       - run:
           name: Test
