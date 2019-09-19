@@ -12,6 +12,5 @@ it('Visual regression test', async () => {
   await page.goto('http://localhost:8089/index-page.html');
   const image = await page.screenshot({ fullPage: true });
   browser.close();
-
   expect(image).toMatchImageSnapshot();
 });
