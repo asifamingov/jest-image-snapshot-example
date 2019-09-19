@@ -8,7 +8,7 @@ it('Visual regression test', async () => {
     executablePath: './node_modules/chromium/lib/chromium/chrome-linux/chrome',
   });
   const page = await browser.newPage();
-  await page.setViewport({ width: 1200, height: 1800 });
+  await page.setViewport({ width: 1600, height: 1800 });
   await page.goto('http://localhost:8084/index-page.html');
   const image = await page.screenshot({ fullPage: true });
   browser.close();
