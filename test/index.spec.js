@@ -7,6 +7,7 @@ it('Visual regression test', async () => {
   const browser = await puppeteer.launch({
     executablePath: './node_modules/chromium/lib/chromium/chrome-linux/chrome',
   });
+
   const page = await browser.newPage();
   await page.setViewport({ width: 1600, height: 1800 });
   await page.goto('http://localhost:8084/index-page.html');
