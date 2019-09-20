@@ -34,3 +34,6 @@ jobs:
       - store_artifacts:
           path: test/__image_snapshots__/__diff_output__
           destination: image_snapshot_diff
+      - store_artifacts:
+          path: test/__image_snapshots__/
+          destination: image_snapshot
